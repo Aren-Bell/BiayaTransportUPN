@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulasi Biaya Transport ke UPN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="container hero-inner">
+      <div class="hero-label">UPN Veteran Jakarta · Depok Selatan</div>
+      <h1 class="hero-title">Simulasi Biaya<br /><span class="hero-accent">Transport ke UPN</span></h1>
+      <p class="hero-sub">Perbandingan biaya transport menuju UPN Veteran Jakarta — biar kamu bisa pilih opsi paling realistis dari dompetmu.</p>
+      <div class="hero-pills">
+        <span class="pill">📍 Dari Bekasi</span>
+        <span class="pill">🗓️ Estimasi Harian</span>
+        <span class="pill">💡 4 Opsi Tersedia</span>
+      </div>
+    </div>
+    <div class="hero-stripe"></div>
+  </header>
+
+  <!-- ===== CARDS ===== -->
+  <section class="section-cards">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pilih Opsi Transportasimu</h2>
+        <p class="section-desc">Klik tiap kartu untuk melihat detail biaya perjalanan.</p>
+      </div>
+
+      <div class="cards-grid">
+
+        <!-- CARD 1: KOST -->
+        <div class="card card--kost">
+          <div class="card-header">
+            <div class="badge badge--purple">🏠 Tinggal Dekat Kampus</div>
+            <div class="card-icon">🏘️</div>
+          </div>
+          <h3 class="card-title">Ngekos</h3>
+          <p class="card-subtitle">Sewa kamar kos di sekitar UPN</p>
+
+          <div class="cost-main">
+            <span class="cost-label">Biaya kos per bulan</span>
+            <span class="cost-amount">Rp1.300.000</span>
+            <span class="cost-period">/bulan</span>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <ul class="benefit-list">
+            <li>✓ Tidak perlu biaya transport harian</li>
+            <li>✓ Hemat tenaga & waktu</li>
+            <li>✓ Lebih fleksibel untuk jadwal kuliah</li>
+          </ul>
+
+          <div class="card-highlight card-highlight--purple">
+            <span class="highlight-label">Estimasi pengeluaran</span>
+            <span class="highlight-val">~Rp43.300/hari</span>
+          </div>
+        </div>
+
+        <!-- CARD 2: KRL OPSI A -->
+        <div class="card card--green">
+          <div class="card-header">
+            <div class="badge badge--green">🚆 Opsi Hemat</div>
+            <div class="card-icon">🚉</div>
+          </div>
+          <h3 class="card-title">Full KRL</h3>
+          <p class="card-subtitle">Bekasi → Lenteng Agung</p>
+
+          <div class="breakdown-list">
+            <div class="breakdown-item">
+              <span class="breakdown-name">🚆 KRL Bekasi → Lenteng Agung</span>
+              <span class="breakdown-val">Rp4.000</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-name">🏍️ Parkir motor di stasiun</span>
+              <span class="breakdown-val">Rp6.000</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-name">🛵 Gojek Lenteng Agung → UPN</span>
+              <span class="breakdown-val">Rp20.000</span>
+            </div>
+          </div>
+
+          <div class="alt-route">
+            <span class="alt-label">Alternatif pengganti Gojek:</span>
+            <span class="alt-val alt-val--free">JakLingko — GRATIS sampai UPN 🎉</span>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="totals">
+            <div class="total-row">
+              <span class="total-label">Dengan Gojek</span>
+              <span class="total-val">Rp54.000/hari</span>
+            </div>
+            <div class="total-row total-row--best">
+              <span class="total-label">Dengan JakLingko</span>
+              <span class="total-val total-val--green">Rp18.000/hari 🏆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: KRL + MRT -->
+        <div class="card card--blue">
+          <div class="card-header">
+            <div class="badge badge--blue">🚇 Opsi Cepat</div>
+            <div class="card-icon">🚄</div>
+          </div>
+          <h3 class="card-title">KRL + MRT</h3>
+          <p class="card-subtitle">KRL → MRT → UPN</p>
+
+          <div class="breakdown-list">
+            <div class="breakdown-item">
+              <span class="breakdown-name">🚆 KRL Bekasi → Sudirman</span>
+              <span class="breakdown-val">Rp4.000</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-name">🏍️ Parkir motor</span>
+              <span class="breakdown-val">Rp6.000</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-name">🚇 MRT Sudirman → Fatmawati</span>
+              <span class="breakdown-val">Rp12.000</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-name">🛵 Gojek Fatmawati → UPN</span>
+              <span class="breakdown-val">Rp12.000</span>
+            </div>
+          </div>
+
+          <div class="alt-route">
+            <span class="alt-label">Alternatif pengganti Gojek:</span>
+            <span class="alt-val">TransJakarta — Rp3.500</span>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="totals">
+            <div class="total-row">
+              <span class="total-label">Dengan Gojek</span>
+              <span class="total-val">Rp42.000/hari</span>
+            </div>
+            <div class="total-row total-row--best">
+              <span class="total-label">Dengan TransJakarta</span>
+              <span class="total-val total-val--blue">Rp35.000/hari ✨</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: MOTOR -->
+        <div class="card card--amber">
+          <div class="card-header">
+            <div class="badge badge--amber">🏍️ Fleksibel</div>
+            <div class="card-icon">⛽</div>
+          </div>
+          <h3 class="card-title">Naik Motor</h3>
+          <p class="card-subtitle">Langsung dari rumah ke kampus</p>
+
+          <div class="breakdown-list">
+            <div class="breakdown-item">
+              <span class="breakdown-name">📍 Jarak tempuh</span>
+              <span class="breakdown-val">± 45 km</span>
+            </div>
+            <div class="breakdown-item">
+              <span class="breakdown-name">⛽ Estimasi bensin sekali jalan</span>
+              <span class="breakdown-val">Rp15.000</span>
+            </div>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="totals">
+            <div class="total-row total-row--best">
+              <span class="total-label">Total pulang-pergi</span>
+              <span class="total-val total-val--amber">Rp30.000/hari</span>
+            </div>
+          </div>
+
+          <ul class="benefit-list benefit-list--amber">
+            <li>✓ Bebas jadwal & rute</li>
+            <li>✓ Tidak tergantung jadwal angkutan</li>
+            <li>⚠ Pertimbangkan biaya macet & parkir</li>
+          </ul>
+        </div>
+
+      </div><!-- /cards-grid -->
+    </div>
+  </section>
+
+  <!-- ===== RINGKASAN ===== -->
+  <section class="section-summary">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title section-title--light">Ringkasan Cepat</h2>
+        <p class="section-desc section-desc--light">Semua opsi dalam satu tabel — mudah dibandingkan.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="summary-table">
+          <thead>
+            <tr>
+              <th>Opsi Transport</th>
+              <th>Estimasi Biaya</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tbl-icon">🏠</span> Kos dekat kampus</td>
+              <td><strong>Rp1.300.000/bulan</strong></td>
+              <td><span class="tbl-tag tbl-tag--purple">Tanpa transport</span></td>
+            </tr>
+            <tr class="row-highlight">
+              <td><span class="tbl-icon">🚆</span> KRL + JakLingko</td>
+              <td><strong class="val-best">Rp18.000/hari</strong></td>
+              <td><span class="tbl-tag tbl-tag--green">Paling hemat 🏆</span></td>
+            </tr>
+            <tr>
+              <td><span class="tbl-icon">🚆</span> KRL + Gojek (Lenteng Agung)</td>
+              <td><strong>Rp54.000/hari</strong></td>
+              <td><span class="tbl-tag tbl-tag--gray">Opsi A reguler</span></td>
+            </tr>
+            <tr>
+              <td><span class="tbl-icon">🚇</span> KRL + MRT + TransJakarta</td>
+              <td><strong>Rp35.000/hari</strong></td>
+              <td><span class="tbl-tag tbl-tag--blue">Cepat & terjangkau</span></td>
+            </tr>
+            <tr>
+              <td><span class="tbl-icon">🚇</span> KRL + MRT + Gojek</td>
+              <td><strong>Rp42.000/hari</strong></td>
+              <td><span class="tbl-tag tbl-tag--blue">Opsi B reguler</span></td>
+            </tr>
+            <tr>
+              <td><span class="tbl-icon">🏍️</span> Naik Motor PP</td>
+              <td><strong>Rp30.000/hari</strong></td>
+              <td><span class="tbl-tag tbl-tag--amber">Paling fleksibel</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note-box">
+        <span class="note-icon">💡</span>
+        <p>Estimasi di atas belum termasuk biaya makan, jajan, dan kebutuhan harian lainnya. JakLingko gratis hanya berlaku dengan kartu JakLingko/Jak Card — pastikan kamu sudah punya kartunya ya!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">Data bersifat estimasi · Harga dapat berubah sewaktu-waktu</p>
+      <p class="footer-copy">Dibuat untuk Mahasiswa Baru UPN Veteran Jakarta 🎓</p>
+    </div>
+  </footer>
+
+</body>
+</html>
